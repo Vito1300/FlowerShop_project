@@ -236,3 +236,34 @@ document.addEventListener('DOMContentLoaded', function () {
 
   updateCartCounter();
 });
+
+// card bloc-details
+
+document.addEventListener('DOMContentLoaded', function () {
+  const productImage = document.querySelector('.product-image');
+  const modal = document.getElementById('orderModal');
+  const closeButton = modal.querySelector('.close');
+
+  function openCardModal() {
+    modal.style.display = 'flex';
+    setTimeout(() => {
+      modal.classList.add('show');
+    }, 10);
+  }
+
+  function closeCardModal() {
+    modal.classList.remove('show');
+    setTimeout(() => {
+      modal.style.display = 'none';
+    }, 400);
+  }
+
+  orderButton.addEventListener('click', openCardModal);
+  closeButton.addEventListener('click', closeCardModal);
+
+  modal.addEventListener('click', function (event) {
+    if (event.target === modal) {
+      closeModal();
+    }
+  });
+});

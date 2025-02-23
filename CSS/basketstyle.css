@@ -6,16 +6,6 @@ body {
   flex-direction: column;
 }
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.main-basket {
-  flex-grow: 1;
-}
-
 .footer {
   background: rgba(0, 0, 0, 0.55);
   color: white;
@@ -64,7 +54,6 @@ body {
 
 .item__product-line {
   gap: 20px;
-  place-items: center;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -103,12 +92,17 @@ body {
 
 .quantity-btn {
   align-items: center;
-  width: 30px;
-  height: 30px;
-  background: white;
+  width: 25px;
+  height: 25x;
+  filter: invert(1);
   border: none;
-  border-radius: 5px;
+  border-radius: 50px;
   cursor: pointer;
+  transition: transform 0.25s;
+}
+
+.quantity-btn:hover {
+  transform: scale(1.05);
 }
 
 .item__product-total {
@@ -117,19 +111,18 @@ body {
 }
 
 .remove-btn {
-  align-items: center;
-  background: rgb(213, 47, 47);
-  color: white;
+  text-align: center;
+  filter: invert(1);
   border: none;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
   cursor: pointer;
-  transition: 0.25s;
+  transition: transform 0.25s;
 }
 
 .remove-btn:hover {
-  background-color: darkred;
+  transform: scale(1.05);
 }
 
 .total-container {

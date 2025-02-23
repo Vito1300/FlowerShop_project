@@ -24,6 +24,12 @@ body {
   background-attachment: fixed;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 body {
   font-size: 16px;
   font-weight: 400;
@@ -45,13 +51,48 @@ body {
   transform: scale(1.05);
 }
 
+.container-header {
+  width: 100%;
+}
+
 .header {
+  width: 100%;
   background-size: cover;
   background-repeat: none;
   display: box;
   align-items: center;
   user-select: none;
   place-content: center;
+}
+
+.upper-header {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.catalog,
+.main,
+.menu-button,
+.contacts {
+  text-decoration: none;
+  color: white;
+  transition: transform 0.35s ease-out;
+  transform-origin: center;
+  will-change: transform;
+  backface-visibility: hidden;
+  width: fit-content;
+  background: none;
+  border: none;
+}
+
+.catalog:hover,
+.contacts:hover {
+  transform: scale(1.05);
 }
 
 .footer {
@@ -152,6 +193,64 @@ body {
   filter: invert(1);
 }
 
+@media (max-width: 576px) {
+  .upper-header {
+    padding: 0px;
+  }
+
+  .catalog {
+    display: none;
+  }
+
+  .menu-button {
+    margin-left: 15px;
+    padding: 0;
+  }
+
+  .Main_sub-name {
+    margin: 0 auto;
+  }
+
+  .name-main {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .cart-icon {
+    margin-right: 15px;
+  }
+
+  .Main_sub-name {
+    margin: 0 auto;
+    font-size: medium;
+  }
+
+  .contacts {
+    display: none;
+  }
+
+  .name-main {
+    font-size: small;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-nav {
+    margin-top: 20px;
+  }
+
+  .footer-nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-social {
+    margin-top: 20px;
+  }
+}
+
 .name__inner {
   padding-top: 5px;
   color: white;
@@ -163,7 +262,7 @@ body {
 
 .name-main {
   line-height: 140%;
-  font-size: 96px;
+  font-size: 76px;
   letter-spacing: 25px;
   font-family: 'Instrument Serif', serif;
 }
@@ -419,35 +518,6 @@ input:focus {
   outline: none;
 }
 
-.upper-header {
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  padding: 0 100px;
-}
-
-.catalog,
-.main,
-.menu-button,
-.contacts {
-  text-decoration: none;
-  color: white;
-  transition: transform 0.35s ease-out;
-  transform-origin: center;
-  will-change: transform;
-  backface-visibility: hidden;
-  width: fit-content;
-  background: none;
-  border: none;
-}
-
-.catalog:hover,
-.contacts:hover {
-  transform: scale(1.05);
-}
-
 .products {
   place-content: center;
   display: flex;
@@ -649,8 +719,8 @@ input:focus {
 
 #notification-container {
   position: fixed;
-  top: 20px;
-  right: 20px;
+  bottom: 20px;
+  left: 20px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -675,4 +745,13 @@ input:focus {
 
 #cart-counter {
   visibility: none;
+}
+
+.horizontal-line {
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 60%;
+  height: 2px;
+  z-index: 1000;
+  font-size: 0;
 }

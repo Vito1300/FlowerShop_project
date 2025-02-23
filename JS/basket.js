@@ -26,13 +26,14 @@ document.addEventListener('DOMContentLoaded', function () {
         <div class="item__product-line">
           <img class="product-image-basket" src="${item.image}" alt="${item.name}">
           <span class="item__product-name">${item.name}</span>
+           <span class="item__product-price">${item.price}$</span>
           <div class="item__product-quantity">
-            <button class="quantity-btn minus">-</button>
+            <img src="images/minus.svg" class="quantity-btn minus" alt="minus">
             <span class="item__product-number">${item.quantity}</span>
-            <button class="quantity-btn plus">+</button>
+            <img src="images/plus.svg" class="quantity-btn plus" alt="plus">
           </div>
           <span class="item__product-total">${itemTotal.toFixed(2)}$</span>
-          <button class="remove-btn">×</button>
+          <img src="images/remove.svg" class="remove-btn" alt="remove">
         </div>
       </section>
       `;
