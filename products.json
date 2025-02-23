@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Sarah Bernhardt",
+    "price": "145",
+    "image": "images/item-card-1.jpeg"
+  },
+  {
+    "id": 2,
+    "name": "Karl Rosenfield",
+    "price": "200",
+    "image": "images/item-card-2.jpeg"
+  },
+  {
+    "id": 3,
+    "name": "Bowl of Beauty",
+    "price": "60",
+    "image": "images/item-card-3.jpeg"
+  },
+  {
+    "id": 4,
+    "name": "Red Charm",
+    "price": "80",
+    "image": "images/item-card-4.jpeg"
+  },
+  {
+    "id": 5,
+    "name": "Shirley Temple",
+    "price": "275",
+    "image": "images/item-card-5.jpeg"
+  },
+  {
+    "id": 6,
+    "name": "Bartzella",
+    "price": "25",
+    "image": "images/item-card-6.jpeg"
+  },
+  {
+    "id": 7,
+    "name": "Bowl of Beauty",
+    "price": "60",
+    "image": "images/item-card-1.jpeg"
+  },
+  {
+    "id": 8,
+    "name": "Red Charm",
+    "price": "80",
+    "image": "images/item-card-2.jpeg"
+  },
+  {
+    "id": 9,
+    "name": "Shirley Temple",
+    "price": "275",
+    "image": "images/item-card-5.jpeg"
+  },
+  {
+    "id": 10,
+    "name": "Bartzella",
+    "price": "25",
+    "image": "images/item-card-4.jpeg"
+  },
+  {
+    "id": 11,
+    "name": "Shirley Temple",
+    "price": "275",
+    "image": "images/item-card-5.jpeg"
+  },
+  {
+    "id": 12,
+    "name": "Bartzella",
+    "price": "25",
+    "image": "images/item-card-2.jpeg"
+  },
+  {
+    "id": 13,
+    "name": "Shirley Temple",
+    "price": "275",
+    "image": "images/item-card-5.jpeg"
+  },
+  {
+    "id": 14,
+    "name": "Bartzella",
+    "price": "25",
+    "image": "images/item-card-4.jpeg"
+  },
+  {
+    "id": 15,
+    "name": "Shirley Temple",
+    "price": "275",
+    "image": "images/item-card-5.jpeg"
+  }
+]

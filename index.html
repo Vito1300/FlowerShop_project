@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container-header">
+          <section class="name__inner">
+            <section class="upper-header">
+              <button id="menuButton" class="menu-button"><img class="menu-icon-header" src="images/menu.svg"></button>
+              <a href="#catalog__block" class="catalog">Каталог</a>
+              <section class="Main_sub-name">
+                <div class="name-main">Peony Luxe</div>
+                <div class="sub-name">найкращі півонії України</div>
+              </section>
+              <a href="#" class="contacts">Контакти</a>
+              <a href="basket.html" class="basket">
+                <div class="cart-icon">
+                  <img class="icon-header" src="images/basket.svg" alt="Кошик">
+                  <span id="cart-counter">0</span>
+                </div>
+                </a>
+              
+            </section>
+          </section>
+
+          <div id="sideMenu">
+            <ul>
+              <li><a href="#">Мій кабінет</a></li>
+              <li><a href="#">Мої замовлення</a></li>
+              <li><a href="#">Кошик</a></li>
+              <li><a href="#">Вийти</a></li>
+            </ul>
+          </div>
+
+          <section class="slider-container">
+            <div class="slider">
+              <!-- <div class="slider-text">
+                <span
+                  >АКЦІЯ ДІЄ ДО 30.01 • АКЦІЯ ДІЄ ДО 30.01 • АКЦІЯ ДІЄ ДО 30.01 • АКЦІЯ ДІЄ ДО 30.01
+                  АКЦІЯ ДІЄ ДО 30.01 • АКЦІЯ ДІЄ ДО 30.01 • АКЦІЯ ДІЄ ДО 30.01 • АКЦІЯ ДІЄ ДО
+                  30.01</span
+                >
+              </div> -->
+
+              <div class="slide-track">
+                <div class="slide"><img src="images/slider-2.jpg" /></div>
+                <div class="slide"><img src="images/slider-3.jpg" /></div>
+                <div class="slide"><img src="images/slider-4.jpg" /></div>
+                <div class="slide"><img src="images/slider-5.jpg" /></div>
+                <div class="slide"><img src="images/slider-1.jpg" /></div>
+                <div class="slide"><img src="images/slider-2.jpg" /></div>
+                <div class="slide"><img src="images/slider-3.jpg" /></div>
+                <div class="slide"><img src="images/slider-4.jpg" /></div>
+                <div class="slide"><img src="images/slider-5.jpg" /></div>
+
+                <div class="slide"><img src="images/slider-2.jpg" /></div>
+                <div class="slide"><img src="images/slider-3.jpg" /></div>
+                <div class="slide"><img src="images/slider-4.jpg" /></div>
+                <div class="slide"><img src="images/slider-5.jpg" /></div>
+                <div class="slide"><img src="images/slider-1.jpg" /></div>
+                <div class="slide"><img src="images/slider-2.jpg" /></div>
+                <div class="slide"><img src="images/slider-3.jpg" /></div>
+                <div class="slide"><img src="images/slider-4.jpg" /></div>
+                <div class="slide"><img src="images/slider-5.jpg" /></div>
+              </div>
+              <!-- <div class="slider-text-right">
+                <span
+                  >АКЦІЯ ДІЄ ДО 30.01 • АКЦІЯ ДІЄ ДО 30.01 • АКЦІЯ ДІЄ ДО 30.01 • АКЦІЯ ДІЄ ДО 30.01
+                  АКЦІЯ ДІЄ ДО 30.01 • АКЦІЯ ДІЄ ДО 30.01 • АКЦІЯ ДІЄ ДО 30.01 • АКЦІЯ ДІЄ ДО 30.01
+                </span>
+              </div> -->
+            </div>
+          </section>
+
+          <section class="button">
+            <button class="button__inner">ЗАМОВИТИ</button>
+          </section>
+
+          <section id="catalog__block"><p>каталог</p></section>
+
+          <div id="orderModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p class="textForm">Заповніть форму, щоб бути на зв'язочку🤗</p>
+              <form>
+                <input
+                  class="firstInput"
+                  placeholder="Ваше прізвище, ім’я"
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                />
+
+                <input
+                  class="secondInput"
+                  placeholder="Ваш номер телефону"
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  required
+                />
+
+                <button id="send" type="submit">НАДІСЛАТИ</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main" class="parallax">
+        <div class="container-main">
+          <section class="sort-products">
+            <div class="sort-container">
+              <label for="sort">Сортувати за :</label>
+              <select id="sort">
+                <option value="default">За замовчуванням</option>
+                <option value="price-asc">Ціна: від дешевих до дорогих</option>
+                <option value="price-desc">Ціна: від дорогих до дешевих</option>
+                <option value="name-asc">Назва: А-Я</option>
+                <option value="name-desc">Назва: Я-А</option>
+              </select>
+            </div>
+          </section>
+          <section class="main__products-container">
+            <div id="product-list" class="products"></div>
+          </section>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container-footer">
+          <div class="footer-content">
+            <div class="footer-logo">
+              <h2>Peony Luxe</h2>
+            </div>
+            <nav class="footer-nav">
+              <ul>
+                <li><a href="#">Головна</a></li>
+                <li><a href="#">Каталог</li>
+                <li><a href="#">Контакти</a></li>
+                <li><a href="#">Про нас</a></li>
+              </ul>
+            </nav>
+            <div class="footer-social">
+              <a href="#"><img src="/images/facebook.svg" alt="Facebook" />Facebook</a>
+              <a href="https://instagram.com">
+                <img src="images/instagram.svg" alt="Instagram">Instagram
+              </a>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; 2025 Всі права захищені</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="JS/script.js"></script>
+  </body>
+</html>
